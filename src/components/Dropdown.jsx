@@ -7,11 +7,14 @@ const Dropdown = ({ options, handleDropdownSelect }) => {
         className="border-2 hover:border-cyan-400 w-auto py-1 px-4 "
         onChange={handleDropdownSelect}
       >
-        {options && options.length ? (
-          options.map((e) => <option value={e.url}>{e.name}</option>)
-        ) : (
-          <option value="">Select</option>
-        )}
+        <option value="">Select</option>
+        {options && options.length
+          ? options.map((e) => (
+              <option key={e.url} value={e.url}>
+                {e.name}
+              </option>
+            ))
+          : null}
       </select>
     </div>
   );
