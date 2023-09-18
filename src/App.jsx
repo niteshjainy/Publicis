@@ -1,9 +1,11 @@
 import PokeHome from "./Routes/PokeHome";
+import PokeHomeWithAsyncAwait from "./Routes/PokeHomeWithAsyncAwait";
 
 function App() {
   return (
     <>
-      <PokeHome />
+      {/* <PokeHome /> */}
+      <PokeHomeWithAsyncAwait />
     </>
   );
 }
