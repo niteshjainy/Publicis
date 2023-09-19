@@ -1,12 +1,16 @@
 import PokeHome from "./Routes/PokeHome";
 import PokeHomeWithAsyncAwait from "./Routes/PokeHomeWithAsyncAwait";
+import PokeHomeWithSeprateHOC from "./Routes/PokeHomeWithSeprateHOC";
+import TextDummyCode from "./TextDummyCode";
 
 function App() {
   return (
-    <>
+    <div>
       {/* <PokeHome /> */}
-      <PokeHomeWithAsyncAwait />
-    </>
+      {/* <PokeHomeWithAsyncAwait /> */}
+      <PokeHomeWithSeprateHOC />
+      {/* <TextDummyCode /> */}
+    </div>
   );
 }
 
